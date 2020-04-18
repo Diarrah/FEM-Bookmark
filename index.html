@@ -9,9 +9,9 @@
     <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar format">
         <img src="images/logo-bookmark.svg" alt="Company logo">
-        <ul class="navbar--links">
+        <ul class="navbar--links format">
             <li>
                 <a href="#">Features</a>
             </li>
@@ -33,7 +33,7 @@
         </a>
     </nav>
 
-    <header class="header">
+    <header class="header format">
         <div class="head--content">
             <h1>A Simple Bookmark Manager</h1>
             <br>
@@ -44,9 +44,7 @@
             <button class="btn blue-btn">Get it on Chrome</button>
             <button class="btn">Get it on Firefox</button>
         </div>
-        <div class="head--img--container">
-            <img src="images/illustration-hero.svg" class="hero-img" alt="Tablet mockup">
-        </div>
+        <img src="images/illustration-hero.svg" class="hero--img" alt="Tablet mockup">
     </header>
 
     <div class="features__section">
@@ -57,7 +55,7 @@
                 Your bookmarks sync between your devices so you can access them on the go.
             </p>
         </div>
-        <div class="feat--options">
+        <div class="feat--options format">
             <a href="#" id="bookmark" class="feat--link current">
                 Simple Bookmarking
             </a>
@@ -69,7 +67,9 @@
             </a>
         </div>
         <div class="features">
-            <img src="images/illustration-features-tab-1.svg" class="feat--img" alt="Webpage mockup">
+            <div class="feat--img--container">
+                <img src="images/illustration-features-tab-1.svg" class="feat--img" alt="Webpage mockup">
+            </div>
             <div class="feat--content">
                 <h2 class="feat--title">Bookmark in one click</h2>
                 <br>
@@ -90,7 +90,7 @@
                 got a favorite you’d like us to prioritize.
             </p>
         </div>
-        <div class="card--container">
+        <div class="card--container format">
             <div class="card">
                 <img src="images/logo-chrome.svg" class="card--img" alt="Google Chrome">
                 <h4>Add to Chrome</h4>
@@ -118,60 +118,59 @@
         <div class="faq">
             <div class="faq--main">
                 <h2>Frequently Asked Questions</h2>
+                <br>
                 <p>Here are some of our FAQs. If you have any other questions you’d like 
                     answered please feel free to email us.
                 </p>
             </div>
             <div class="accordion">
                 <div class="accordion--item">
-                    <button>
+                    <button class="faq-question">
                         <span>What is Bookmark?</span>
                         <img src="images/icon-arrow.svg" class="arrow" alt="Arrow">
                     </button>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                    <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
                         justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
                     </p>
                 </div>
                 <div class="accordion--item">
-                    <button>
+                    <button class="faq-question">
                         <span>How can I request a new browser?</span>
                         <img src="images/icon-arrow.svg" class="arrow" alt="Arrow">
                     </button>
-                    <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                    <p class="faq-answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
                         Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
                         ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
                         Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
                     </p>
                 </div>
                 <div class="accordion--item">
-                    <button>
+                    <button class="faq-question">
                         <span>Is there a mobile app?</span>
                         <img src="images/icon-arrow.svg" class="arrow" alt="Arrow">
                     </button>
-                    <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                    <p class="faq-answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
                         urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
                         sollicitudin ex et ultricies bibendum.
                     </p>
                 </div>
                 <div class="accordion--item">
-                    <button>
+                    <button class="faq-question">
                         <span>What about other Chromium browsers?</span>
                         <img src="images/icon-arrow.svg" class="arrow" alt="Arrow">
                     </button>
-                    <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                    <p class="faq-answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
                         vitae neque eget nisl gravida pellentesque non ut velit.
                     </p>
                 </div>
             </div>
                 <button class="btn blue-btn">More Info</button>
-                
             </div>
-        </div>
 
         <div class="meta__footer">
             <p>35,000+ already joined</p>
             <h3>Stay up-to-date with what we’re doing</h3>
-            <form class="form-control">
+            <form class="form-control format">
                 <div class="form-invalid-wrapper">
                     <input aria-label="Email input area" type="email" id="email" placeholder="Enter your email address">
                     <img src="images/icon-error.svg" class="exclamation" alt="Exclamation error">
@@ -181,8 +180,8 @@
             </form>
         </div>
 
-        <footer class="footer">
-            <ul class="navbar--links">
+        <footer class="footer format">
+            <ul class="navbar--links format">
                 <li>
                     <img src="images/logo-bookmark-white.svg" alt="Company logo">
                 </li>
