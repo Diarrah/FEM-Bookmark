@@ -81,11 +81,12 @@ body {
     position: fixed;
     top: 0; bottom: 0; left: 0; right: 0;
     background-color: hsla(229, 31%, 21%, .95); 
-    z-index: 2;
+    z-index: 1;
     padding: 30px 8vw;
     transform: translateY(-100%);
     transition: 0.8s ease;
     transition-delay: .4s;
+    visibility: hidden;
 }
 
 .top { 
@@ -120,7 +121,7 @@ body {
     width: 100px;
     margin: 0 auto;
     position: relative;
-    top: 20%;
+    top: 110px;
 }
 .mobile--socials img { height: 90%; }
 
@@ -426,12 +427,13 @@ h4 { padding: 20px 0 5px; }
     .navbar .navbar--links { display: none; }
 
     /* Mobile Nav Toggles */
-    .show.mobile--nav { transform: translateY(0); }
+    .show.mobile--nav { 
+        transform: translateY(0); 
+        visibility: visible; }
     .hide.navbar { transform: translateY(-110%); }
     .click.x { 
         transform: rotateZ(360deg);
-        transition: transform 0.6s;
-    }
+        transition: transform 0.6s; }
     /* ----------------------------------------- */
 
     .header > *,
